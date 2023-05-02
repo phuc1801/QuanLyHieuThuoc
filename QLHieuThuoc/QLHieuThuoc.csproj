@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D3978DE-A541-43A1-B537-DEACE06C733F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLHieuThuoc</RootNamespace>
+    <AssemblyName>QLHieuThuoc</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CForms\frmDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CForms\frmDashbord.Designer.cs">
+      <DependentUpon>frmDashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CForms\frmAddMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CForms\frmAddMedicine.Designer.cs">
+      <DependentUpon>frmAddMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin1.Designer.cs">
+      <DependentUpon>frmlogin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CForms\frmMedicineVlyCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CForms\frmMedicineVlyCheck.Designer.cs">
+      <DependentUpon>frmMedicineVlyCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CForms\frmLogout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CForms\frmLogout.Designer.cs">
+      <DependentUpon>frmLogout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CForms\frmNewMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CForms\frmNewMedicine.Designer.cs">
+      <DependentUpon>frmNewMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CForms\frmModifiMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CForms\frmModifiMedicine.Designer.cs">
+      <DependentUpon>frmModifiMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CForms\frmSellMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CForms\frmSellMedicine.Designer.cs">
+      <DependentUpon>frmSellMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CForms\frmAddMedicine.resx">
+      <DependentUpon>frmAddMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CForms\frmDashbord.resx">
+      <DependentUpon>frmDashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CForms\frmLogout.resx">
+      <DependentUpon>frmLogout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CForms\frmMedicineVlyCheck.resx">
+      <DependentUpon>frmMedicineVlyCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CForms\frmModifiMedicine.resx">
+      <DependentUpon>frmModifiMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CForms\frmNewMedicine.resx">
+      <DependentUpon>frmNewMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CForms\frmSellMedicine.resx">
+      <DependentUpon>frmSellMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin1.resx">
+      <DependentUpon>frmlogin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-nha-thuoc-ovn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-personas-header1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
